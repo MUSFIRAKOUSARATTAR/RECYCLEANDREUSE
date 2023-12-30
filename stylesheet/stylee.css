@@ -1,0 +1,12 @@
+*{
+margin:0;
+border:0;
+}
+body{
+background-color: aqua;
+margin-left: 50px;
+
+}
+.d-flex ms-auto{
+    margin-left: 50px;
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" href="r.png" title="Lets recycle and reuse">
+    <meta charset="UTF-8">
+   <title>Iron</title> 
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    
+  
+</head>
+    <style>
+        /* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #fbd0d0;
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+label.logo{
+  color: rgb(40, 82, 188);
+  font-size: 35px;
+  padding: 10px 100px;
+  font-weight: bold;
+}
+.nav-links li{
+  list-style: none;
+  margin: 0 12px;
+}
+.nav-links li a{
+  position: relative;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+}
+.nav-links li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #34efdf;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover:before{
+  width: 100%;
+}
+.nav-links li.center a:before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-links li.upward a:before{
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+.nav-links li.upward a:hover:before{
+  bottom: 0px;
+  opacity: 1;
+}
+.nav-links li.forward a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+.nav-links li.forward a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      width: 100%;
+      height: auto;
+    }
+    section {
+  width: 100%;
+  display: inline-block;
+  background: #ad1a1a;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+	background: #050404;
+	box-shadow: 0 1px 1px 0 rgba(3, 3, 3, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+   
+    </style>
+   </head>
+<body>
+  <ul class="nav-links">
+    <label class="logo"><a href="homeee.html"> <img src="r.png" height="50px" width="70px"><u>Recycle and Reuse</u></a></label>    
+    <li><a href="#">Home</a></li>
+    <li class="center"><a href="serviceform.html">Request Service</a></li>
+    <li class="upward"><a href="https://meet.google.com/tuh-iesi-dyd">Call Expert</a></li>
+   
+  </ul>
+  <dl style="text-align: center;">
+    <dt><h2 style="color:#ee2020"><u>Embrace sustainability with our innovative initiative</u></h2></dt>
+    <dd>&nbsp;- we offer a hassle-free solution to collect waste and unused Iron from customers.</dd>
+  </dl>
+  <p style="padding: 3%; color:#060b0e; font-size:large"><b>Welcome to our sustainable furniture recycling program! At our organization, we are dedicated to reducing waste and promoting eco-friendly practices. By collecting waste and unused home furniture iron from customers like you, we take a significant step towards a greener future. Our expert team ensures that this iron is given a new life through innovative recycling processes. We transform the collected iron into durable and functional reusable items, such as stylish metal furniture and creative home decor pieces. Embrace conscious consumption and be a part of this circular economy movement by contributing your furniture iron for recycling. Together, let's build a more sustainable world and turn discarded iron into wonderful possibilities for generations to come. Join us today and witness the transformative power of recycling in creating a greener and more vibrant future.</b></p>
+  <h3 style="text-align: center;color:blue">For Better Tomorrow</h3>
+  <ol style="margin:2%;font-size:large">
+    <li>Our initiative focuses on sustainable furniture recycling, collecting waste and unused home furniture iron from customers.</li>
+    <li>We are committed to responsible waste management, reducing the environmental impact of discarded iron.</li>
+    <li>By recycling furniture iron, we contribute to a circular economy and minimize the need for new iron production.</li>
+    <li>Be a part of the change - recycle your home furniture iron with us and witness the transformation into reusable treasures.</li>
+  </ol>
+  <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+    <div class="card bg-success">
+    <div class="card-header"><b>WHAT TO RECYCLE</b></div>
+    <div class="card-body">
+    <div class="card-title"><h5></h5></div>
+    <div class="card-text" style="color: white;"><ol>
+        <li>Wrought Iron</li>
+        <li>Cast Iron</li>
+        <li>Steel</li>
+    </ol></div>
+    </div>
+    <div class="card-footer">Let's Recycle</div>
+    </div>
+    </div>
+    
+    <div class="col-md-6">
+    <div class="card bg-info">
+    <div class="card-header"><b>WHAT NOT TO RECYCLE</b></div>
+    <div class="card-body">
+    <div class="card-title"><h5></h5></div>
+    <div class="card-text" style="color: white;"><ol>
+        <li>Non-Iron Components</li>
+        <li>Painted or Treated Furniture</li>
+        <li>Mixed Materials</li>
+    </ol></div>
+    </div>
+    <div class="card-footer">Let's Reuse</div>
+    </div>
+    </div>
+    </div>
+    <br>
+    
+   
+    
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Lets<span> <br>Recycle and Reuse</span></h3>
+
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					<a href="#">Blog</a>
+				
+					<a href="#">Pricing</a>
+				
+					<a href="#">About</a>
+					
+					<a href="#">Faq</a>
+					
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Company Name © 2015</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>RGUKT IIIT</span> Rk valley, Kadapa</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 9000111234</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					We aim to collect the Recyclable Home Wastage, Recycle the wastage according to the wish customer's wish and deliver to same customer. 
+				</p>
+
+			</div>
+
+		</footer>
+   
+
+
+</body>
+</html>

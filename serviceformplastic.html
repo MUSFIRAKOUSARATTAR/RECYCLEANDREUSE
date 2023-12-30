@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="r.png" title="Lets recycle and reuse">
+  <meta charset="utf-8">
+  <title>Service Request Form</title>
+  <style>
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #c1f7f5;
+    }
+    .nav-links{
+  display: flex;
+  align-items: center;
+  background: #edf0f0;
+  padding: 20px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+label.logo{
+  color: rgb(46, 174, 46);
+  font-size: 35px;
+  padding: 10px 100px;
+  font-weight: bold;
+}
+.nav-links li{
+  list-style: none;
+  margin: 0 12px;
+}
+.nav-links li a{
+  position: relative;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+}
+.nav-links li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #34efdf;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.nav-links li a:hover:before{
+  width: 100%;
+}
+.nav-links li.center a:before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-links li.upward a:before{
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+.nav-links li.upward a:hover:before{
+  bottom: 0px;
+  opacity: 1;
+}
+.nav-links li.forward a:before{
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+.nav-links li.forward a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+    .form-container {
+      border: 1px solid #3472cf;
+      border-radius: 8px;
+      background-color: #e7acca;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 0;
+      padding-top: 20px;
+    }
+
+    .form-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .form-heading img {
+      max-width: 80%;
+      height: 80%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <ul class="nav-links">
+    <a href="homeee.html"> <img src="r.png" height="50px" width="70px"></a>
+    <label class="logo">Lets Recycle and Reuse</label>    
+    <li><a href="homeee.html">Home</a></li>
+    <li class="upward"><a href="plastic.html">Go Back</a></li>
+    <li class="forward"><a href="#">Help</a></li>
+  </ul>
+  <div class="form-container">
+    <div class="form-heading">
+      <img src="images/slide2.jpg" alt="Form Heading Image">
+    </div>
+
+    <h2><u>Service Request Form</u></h2>
+
+    <form action="log8.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required><br><br>
+
+      <label for="name">Quantity</label>
+      <input type="text" id="original" name="oname" required placeholder="1,2,3..."><br><br>
+      <label for="service">Payment Mode:</label>
+      <select id="service" name="service" required>
+        <option value="">Select ur payment mode</option>
+        <option value="Online">Online</option>
+        <option value="cash on delivery">cash on delivery</option>
+        
+      </select>
+      <br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

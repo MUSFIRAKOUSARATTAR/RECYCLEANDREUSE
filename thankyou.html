@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Thank You</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #bdf4f6;
+      overflow: hidden;
+    }
+
+    .thank-you-container {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .thank-you-message {
+      font-size: 24px;
+      color: #333;
+      background-color: #f9f9f9;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: fallingPapers 5s linear infinite;
+    }
+
+    @keyframes fallingPapers {
+      0% {
+        transform: translateY(-100%);
+      }
+
+      100% {
+        transform: translateY(100%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="thank-you-container">
+    <div class="thank-you-message">Thank you !</div>
+  </div>
+</body>
+
+</html>

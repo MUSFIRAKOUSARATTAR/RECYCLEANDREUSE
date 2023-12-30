@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mini Project</title>
+    <meta cahrset="utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,
+    shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous">
+
+    
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+      
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+       crossorigin="anonymous">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+      <style type="text/css">
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@700&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300;400;500;600&family=Quicksand:wght@700&display=swap');
+
+        body{
+            background-color:white;
+        }
+      span{
+        color:lightgreen;
+      }
+      .navbar-brand{
+      font-family: 'Oswald', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-size: 30px;
+      }
+ 
+ #img{
+    border-radius: 100%;
+    padding:10px;
+  box-sizing: 10px;
+  
+
+ }
+  .data{
+    text-align: center;
+    border:10px;
+
+  }
+  a{
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .d-flex{
+    border:10px;
+    margin:5px 5px 5px 5px;
+  }
+  .form-control{
+    font-size: 20px;
+  }
+  i{
+    font-size:15px ;
+  
+ 
+}
+  .card{
+    box-shadow:0 4px 8px 0
+    rgba(0,0,0,0.2);
+    transition:0.3s;
+    width:40%;
+    width: 330px;
+    height: 330px;
+    border-radius: 2%;
+  margin:5px;
+    
+  }
+  .card:hover{
+    box-shadow:0 8px 16px 0
+    rgba(0,0,0,0.2);
+  }
+  .container{
+    padding:2px 16px;
+    border:10px;
+    margin-bottom: auto;
+    padding:40px;
+  }
+  .containerr{
+    max-width:1170px;
+     
+     margin:auto;
+     font-family: 'Poppins', sans-serif;
+  }
+  .row{
+    display:flex;
+    flex-wrap:wrap;
+  }
+  ul{
+    list-style:none;
+  }
+.footer{
+  background-color:#24262b;
+  padding:70px 0;
+
+}
+.footer-col{
+  width:25%;
+  padding:0 15px;
+}
+.footer-col h4{
+  font-size:18px;
+  color:#ffffff;
+  margin-bottom:35spx;
+  font-weight:500;
+  position:relative;
+}
+.footer-col h4::before{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-10px;
+  background-color:#f5a6c1;
+  height:2px;
+  box-sizing:border-box;
+  width:50px;
+  margin:5px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom:10px;
+}
+  .footer-col ul li a{
+    margin:20px;
+    text-align: left;
+    font-size:16px;
+    text-transform:capitalize;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:300;
+    color:#bbbbbb;
+    display:block; 
+    transition:LL 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left:8px;
+  }
+  .footer-col .social-links a{
+    
+    display:inline-block;
+    height:40px;
+    width:40px;
+    background-color:rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align:center;
+    line-height:40px;
+    border-radius:50%;
+    color:#ffffff;
+    transition:all 0.5s ease;
+
+  }
+  .footer-col .social-links a:hover{
+    color:#24262b;
+    background-color: #ffffff;
+  }
+  .social-links{
+    padding:10px;
+  }
+  #h{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  @media(max-width:767px){
+    .footer-col{
+      width:25%;
+      width:25%;
+      padding:0 15px;
+     margin-bottom:30px;
+    }
+  }
+  
+      </style>
+      
+      </head>
+
+
+
+<body>
+    <!-- responsive navgation-->
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid"> 
+                <a href="#" class="navbar-brand"> <b>Welcome let's<span> Recycle</span> and<span> Reuse</span></b></a>
+
+            
+                    
+                <div class="collapse navbar-collapse" id="navbarcollapse">
+                  <div class="navbar-nav">
+                     
+                     
+                      
+                      <a href="#" class="nav-item nav-link active"> Home</a>
+                      <a href="#" class="nav-item nav-link active"> AboutUs</a>
+
+                      <a href="#" class="nav-item nav-link"> Admin</a>
+                     
+                  </div>
+                        
+                        <div class="navbar-nav ms-auto">
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> My Account</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item"> Register</a>
+                                    <a href="#" class="dropdown-item"> Login</a>
+                                   
+    
+    
+                                </div>
+                            </div>
+                          
+                            <a href="#" class="nav-item nav-link"> contactus</a>
+
+                        </div>
+                        <div class="d-flex">
+                            <div class="input-group">
+                                <input type="text" class="form-control"  placeholder="search here......"/>
+                                <button type="button" class="btn btn-secondary">
+                                    <i class="bi-search"> </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+        </nav>
+        <!--Section2-->
+        
+       <table>
+        <tr>
+            <td>
+               <a href="service1.html"><img src="images/service.jpeg" alt="Services"  height="150px" width="150px" id="img"></a>s
+              </td>
+              <td>
+                <a href="ff.html">  <img src="images/fashion.jpg" alt="fashion"   height="150px" width="150px" id="img" ></a>
+              </td>
+              <td>
+               <a href="wood.html"> <img src="images/wood.jpg" alt="Wood"   height="150px" width="150px" id="img"></a>
+              </td>
+            <td>
+             <a href="book.html"> <img src="images/book.jpg" alt="papers"   height="150px" width="150px" id="img"></a>
+
+              </td>
+             
+              <td>
+               <a href="sleepers.html"> <img src="images/footware.jpg" alt="footware"   height="150px" width="150px" id="img"></a>
+              </td>
+             
+              <td>
+                <a href="iron.html"><img src="images/gym.jpg" alt="Wellness"  height="150px" width="150px" id="img"></a></td>
+             
+
+              <td>
+               <a href="plastic.html"> <img src="images/plastic.jpg" alt="Plastic"  height="150px" width="150px" id="img"></a>
+              </td>
+              
+             
+             
+              <td>
+               <a href="elctronic.html"> <img src="images/electronic.jpg" alt="Electronic"  height="150px" width="150px" id="img"></a>
+              </td>
+              <td>
+                <a href="festival.html"> <img src="images/festival.avif" alt="festival"  height="150px" width="150px" id="img"></a>
+               </td>
+            
+
+            
+           
+              
+              
+              </tr>
+              <tr class="data" >
+                <td id="h">
+                <b>Services</b>
+                </td>
+                <td id="h">
+                  <i>Fashions</i>
+                  </td>
+
+                  <td id="h">
+                    <i> Wood</i>
+                    </td>
+                
+                <td id="h">
+                    <i> Books</i>
+                    </td>
+                    <td id="h">
+                      <i> Footware</i>
+                      </td>
+                        
+                            <td id="h">
+                              <i> Iron</i>
+                              </td>
+                               <td id="h">
+                                <i> Plastic</i>
+                                               </td>
+                                                        <td id="h">
+                                                            <i> Electronic</i>
+                                                            </td>
+                                                            <td id="h">
+                                                              <i> Festive</i>
+                                                              </td>
+                                          
+                                            
+                                              
+                                         
+
+              </tr>
+              </table>
+              
+            
+              
+                <div class="container">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" ></li>
+                            <li data-target="#myCarousel" data-slide-to="2" ></li>
+                            <li data-target="#myCarousel" data-slide-to="3" ></li>
+                            <li data-target="#myCarousel" data-slide-to="4" ></li>
+                            <li data-target="#myCarousel" data-slide-to="5" ></li>
+
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="images/3.jpg" alt="" style="width:100%;">
+                            </div>
+                       
+                    <div class="item">
+                        <img src="images/1.png" alt="info" style="width:100%;">
+
+                    </div>
+                    <div class="item">
+                        <img src="images/2.png" alt="info" style="width:100%;">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="images/2.jpg" alt="info" style="width:100%;">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="images/1.jpg" alt="info" style="width:100%;">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="images/3.png" alt="info" style="width:100%;">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="images/4.png" alt="info" style="width:100%;">
+                        
+                    </div>
+                   
+                    
+
+
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"> 
+                    <span class="glyphicon glyhicon-chevron-left"> </span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-cotrol" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyhicon-chevron-right"> </span>
+                    <span class="sr-only">Next</span>
+                </a>
+        </div>
+        </div>
+        <div class="row" >
+       <div class="card">
+          <img src="images/carrt.jpg" alt="cart" width="300px" height="250px"style="width:100%">
+          <div class="container">
+            <h4><b>Buy Products & PayByWaste</b></h4>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/garbage.png" alt="cart"width="300px" height="250px" style=width:100%>
+          <div class="container">
+            <h4><b>Estimate Waste Value & Buy Products</b></h4>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/donate.png" alt="cart"width="300px" height="250px" style=width:100%>
+          <div class="container">
+            <h4><b> Donate Waste & Support CSR</b></h4>
+            
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="images/d2.avif" alt="cart" width="300px" height="250px">
+          <div class="container">
+            <h4><b> Brand Packaging Take Back</b></h4>
+            
+          </div>
+        </div>
+        </div>
+        <!--Footer Section-->
+        <footer class="footer">
+
+        <div class="containerr">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#"> about us</a></li>
+                 <li><a href="#">our Services</a></li>
+                  <li><a href="#"> privacy Policy</a></li>
+                     <li><a href="#"> afiliate Program</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Get help</h4>
+              <ul>
+                <li><a href="#">fAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">order Status</a></li>
+                <li><a href="#">payment Options</a></li>
+                <li><a href="#">recycle Process</a></li>
+                <li><a href="#">taking products from customers</a></li>
+
+              </ul>
+
+            </div>
+            <div class="footer-col">
+              <h4>Recycle</h4>
+              <ul>
+                <li><a href="#">Wooden</a></li>
+                <li><a href="#">Plastic</a></li>
+                <li><a href="#">Home essentials</a></li>
+                <li><a href="#">Fashions</a></li>
+              </ul> 
+
+            </div>
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+               
+                <a href="#" > <i class="bi bi-facebook"></i></a>
+                <a href="#" > <i class="bi bi-twitter"></i></a>
+                <a href="#" > <i class="bi bi-whatsapp"></i></a>
+                <a href="#" > <i class="bi bi-instagram"></i></i></a>
+                <a href="#"><i class="bi bi-recycle"></i> </a>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </footer>
+            
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"> </script>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!--<script src="script/script.js">
+
+</script>-->
+
+
+
+</body>
+
+</html>
