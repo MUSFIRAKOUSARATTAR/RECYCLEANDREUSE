@@ -1,11 +1,8 @@
 ![](ui_snapshot.jpg)
 
-In this data science and machine learning project, we classify the admin and users it will detect the image of the admin and allow admin to modify
-1) Maria Sharapova
-2) Serena Williams
-3) Virat Kohli
-4) Roger Federer
-5) Lionel Messi
+In this data science and machine learning project, we classify the admin and users it will detect the image of the admin and allow admin to modify and perform various operations.
+1)ATTAR MUSFIRA KOUSAR
+2)T.SAI PRAVEEN(team mate)
 
 Here is the folder structure,
 * UI : This contains ui website code 
