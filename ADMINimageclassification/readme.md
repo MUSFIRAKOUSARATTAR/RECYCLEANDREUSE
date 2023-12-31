@@ -1,6 +1,4 @@
-![](ui_snapshot.jpg)
-
-In this data science and machine learning project, we classify the admin and users it will detect the image of the admin and allow admin to modify and perform various operations.
+In this data science and machine learning project, we classify the admin and users it will detect the image of the admin and allow admin to modify and perform various operations.for privacy purpose we have used an image classifictaion for authenticating admin.
 1)ATTAR MUSFIRA KOUSAR
 2)T.SAI PRAVEEN(team mate)
 
