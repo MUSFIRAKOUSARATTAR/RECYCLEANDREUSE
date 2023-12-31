@@ -1,6 +1,6 @@
 ![](ui_snapshot.jpg)
 
-In this data science and machine learning project, we classify sports personalities. We restrict classification to only 25 people,
+In this data science and machine learning project, we classify the admin and users it will detect the image of the admin and allow admin to modify
 1) Maria Sharapova
 2) Serena Williams
 3) Virat Kohli
